@@ -1,0 +1,296 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Header */
+
+
+header {
+    background-color: #1f2937;
+}
+
+/* NavBar */
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #f9faf8;
+    margin: 20px 0;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+nav {
+    width: 75%;
+    margin: 0 auto;
+    /* border: 1px solid pink; */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+
+/* Heading Section */
+
+h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
+    margin-bottom: 10px;
+}
+
+.flex-item-1 p {
+    font-weight: 18px;
+    color: #e5e7eb;
+}
+
+.header-flex {
+    /* border: 1px solid blue; */
+    width: 75%;
+    padding: 100px 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.header-flex>div {
+    /* border: 1px solid red; */
+    flex: 1;
+}
+
+.flex-item-1 .links {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* border: 1px solid yellow; */
+}
+
+.flex-item-2 {
+    /* background-color: #6d747d; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-item-2 img {
+    border-radius: 10px;
+    height: 230px;
+    width: 100%;
+    display: block;
+}
+
+.links button {
+    padding: 5px 20px;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: none;
+    background-color: #3882f6;
+    color: #f9faf8;
+    font-weight: bold;
+}
+
+
+
+/* Main Images Section */
+
+main>div {
+    width: 75%;
+    margin: 25px auto;
+    /* border: 1px solid blue; */
+}
+
+
+h2 {
+    text-align: center;
+    /* border: 1px solid red; */
+    margin: 15px auto;
+    font-size: 36px;
+    font-weight: bold;
+    width: 100%;
+    color: #1f2937;
+}
+
+figure {
+    width: 150px;
+    flex: 1;
+    margin-top: 10px;
+    color: #8c929b;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+
+figure img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+    display: block;
+    border-radius: 10px;
+}
+
+.figure-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: space-evenly;
+    gap: 30px;
+    margin-bottom: 75px;
+}
+
+
+
+/* Quote section */
+
+.quote-section {
+    background-color: #e5e7eb;
+}
+
+.quote-section div {
+    width: 75%;
+    margin: 0 auto;
+    padding: 70px;
+    /* border: 1px solid pink; */
+}
+
+.quote {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #1f2937;
+    /* border: 1px solid red; */
+}
+
+.author {
+    font-weight: bold;
+    text-align: right;
+    margin-top: 20px;
+    /* border: 1px solid red; */
+}
+
+
+/* Calling for action */
+
+.action>div {
+    width: 75%;
+    margin: 0 auto;
+    padding: 60px 0;
+
+    /* border: 1px solid pink; */
+}
+
+.action-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    background-color: #3882f6;
+    color: #f9faf8;
+    padding: 30px 80px;
+    border-radius: 10px;
+
+    /* border: 1px solid red; */
+}
+
+h3 {
+    line-height: 1.3;
+    margin-bottom: 10px;
+    ;
+}
+
+button {
+    background-color: #3882f6;
+    color: #f9faf8;
+    font-weight: bold;
+    font-size: 16px;
+    border: 2px solid #f9faf8;
+    border-radius: 10px;
+    padding: 5px 30px;
+}
+
+
+
+
+@media (max-width: 550px) {
+    .quote-section div {
+        width: 100%;
+        padding: 70px 10px;
+    }
+
+    .quote {
+        font-size: 18px;
+    }
+
+    .action>div {
+        width: 100%;
+        padding: 0;
+    }
+
+    .action-flex {
+        border-radius: 0;
+        padding: 30px 30px;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .header-flex {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .header-flex img {
+        width: 100%;
+        height: 100%;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+
+    a {
+        font-size: 12px;
+    }
+
+    figcaption {
+        font-size: 12px;
+    }
+}
+
+/* Footer */
+
+footer {
+    height: 70px;
+    background-color: #1f2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f9faf8;
+    font-size: 12px;
+}
